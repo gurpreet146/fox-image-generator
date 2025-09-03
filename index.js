@@ -5,8 +5,10 @@ async function readData() {
   let photo = document.getElementsByClassName("image");
   let p = document.getElementsByTagName("p");
   p[0].style.display = "none";
-  photo[0].style.display = "block";
+  photo[0].style.opacity = 1;
+  photo[0].style.height = "400px";
   images[0].src = data.image;
 }
+
 
 document.getElementById("btn").addEventListener("click", readData);
